@@ -1,0 +1,28 @@
+{
+  "name": "barros-labecommerce-backend15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/Barros-labEcommerce-backend15.git"
+  },
+  "keywords": [],
+  "author": "Kayo Céshar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/Barros-labEcommerce-backend15/issues"
+  },
+  "homepage": "https://github.com/future4code/Barros-labEcommerce-backend15#readme",
+  "dependencies": {
+    "chalk": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  }
+}
