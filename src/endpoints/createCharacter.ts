@@ -1,19 +1,22 @@
 import {Request,Response} from 'express'
-import { characters } from '../data'
+import connection from '../connection'
 
 
-export default function createCharacter(
+
+export default async function createCharacter(
     req: Request,
     res: Response
-): void{
+):Promise<void>{
     const{name,gender,description} = req.body
+    try{
+        await connection("character")
+            .insert({name,gender,description})
 
-    characters.push({
-        id: Date.now(),
-        name,
-        gender,
-        description
-    })
+        res.status(200).end()
+
+    }catch(err){
+        res.status(500).end()
+    }
     
-    res.status(201).end()
+    
 }

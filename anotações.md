@@ -21,4 +21,8 @@ app.listen(3003, () => {
     console.log("Servidor ready!");    
 });```
 
+knex:
 
+npm install knex mysql
+npm install @types/knex @types/mysql -D
+npm i dotenv

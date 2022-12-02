@@ -21,7 +21,7 @@ exports.characters = [
         gender: types_1.GENDER.FEMALE
     },
     {
-        id: 21,
+        id: 2,
         name: "Deadpool",
         gender: types_1.GENDER.MALE,
         description: "Sexy motherf***"
